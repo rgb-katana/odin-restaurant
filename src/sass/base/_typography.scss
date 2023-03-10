@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Slabo';
+  src: url(../fonts/Slabo27px-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Tilt';
+  src: url(../fonts/TiltWarp-Regular.ttf);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: 'Pacifico';
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: 'Tilt';
+}
+
+p,
+li,
+figcaption,
+cite {
+  font-family: 'Slabo';
+}

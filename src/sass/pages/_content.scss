@@ -1,0 +1,17 @@
+#content {
+  background-image: linear-gradient(
+    90deg,
+    $color-secondary-dark,
+    $color-secondary-light
+  );
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
