@@ -51,8 +51,7 @@ cite {
 .contacts {
   width: 70%;
   min-height: 100vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +63,68 @@ cite {
   @media only screen and (max-width: 75em) {
     .contacts {
       width: 80%; } }
+  .contacts__title {
+    font-size: 5rem; }
+  .contacts > * {
+    background-color: #fdf6de;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  .contacts > *:first-child {
+    background-color: transparent;
+    box-shadow: none; }
+  .contacts > *:not(:last-child) {
+    margin-bottom: 3rem; }
+  .contacts__owner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    @media only screen and (max-width: 56.25em) {
+      .contacts__owner {
+        flex-direction: column; } }
+  .contacts__img {
+    width: 50%;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .contacts__img {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        width: 80%; } }
+  .contacts .right-side > * {
+    font-family: 'Slabo';
+    font-size: 2.5rem; }
+  .contacts .right-side > *:not(:last-child) {
+    margin-bottom: 1rem; }
+  .contacts__name {
+    border-bottom: 3px solid black;
+    text-align: center; }
+  .contacts__position {
+    text-align: center; }
+  .contacts__phone {
+    font-style: italic;
+    text-align: center;
+    border-bottom: 3px solid black; }
+  .contacts__email {
+    font-style: italic;
+    text-align: center; }
+  .contacts__map {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .contacts__info {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .contacts__img--map {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin: 0; }
 
 .home {
   width: 70%;
@@ -83,8 +144,12 @@ cite {
       width: 80%; } }
   .home > * {
     background-color: #fdf6de;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 1rem; }
+  .home > *:first-child {
+    background-color: transparent;
+    box-shadow: none; }
   .home > *:not(:last-child) {
     margin-bottom: 3rem; }
   .home__title {
@@ -152,6 +217,10 @@ cite {
   .home__list {
     list-style: none;
     margin-top: 1.5rem; }
+  .home__elem {
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #777; }
   .home__elem:not(:last-child) {
     margin-bottom: 0.5rem; }
   .home__location {
@@ -161,7 +230,9 @@ cite {
     align-items: center;
     flex-direction: column; }
     .home__location p {
-      margin-top: 1.5rem; }
+      margin-top: 1.5rem;
+      font-size: 2.5rem;
+      text-align: center; }
 
 .menu {
   width: 70%;
