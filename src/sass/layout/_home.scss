@@ -21,8 +21,14 @@
 
   & > * {
     background-color: $color-home-light;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(black, 0.5);
     padding: 2rem;
     border-radius: 1rem;
+  }
+
+  & > *:first-child {
+    background-color: transparent;
+    box-shadow: none;
   }
 
   & > *:not(:last-child) {
@@ -122,6 +128,12 @@
     margin-top: 1.5rem;
   }
 
+  &__elem {
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 3px solid $color-grey-dark;
+  }
+
   &__elem:not(:last-child) {
     margin-bottom: 0.5rem;
   }
@@ -135,6 +147,8 @@
 
     p {
       margin-top: 1.5rem;
+      font-size: 2.5rem;
+      text-align: center;
     }
   }
 }

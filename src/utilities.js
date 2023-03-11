@@ -16,3 +16,11 @@ export function createImgEl(classList, src, alt) {
 }
 
 export const content = document.getElementById('content');
+export const navBtn = document.querySelector('.navigation__button');
+export const navToggle = document.getElementById('navi-toggle');
+
+export const navHome = document.querySelector('.navigation__link--home');
+export const navMenu = document.querySelector('.navigation__link--menu');
+export const navContacts = document.querySelector(
+  '.navigation__link--contacts'
+);

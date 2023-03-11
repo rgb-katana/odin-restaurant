@@ -2,8 +2,7 @@
   width: 70%;
   min-height: 100vh;
 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
 
   @include respond(big-desktop) {
     width: 50%;
@@ -19,4 +18,98 @@
   flex-direction: column;
 
   background-color: $color-home-dark;
+
+  &__title {
+    font-size: 5rem;
+  }
+
+  & > * {
+    background-color: $color-home-light;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(black, 0.5);
+  }
+
+  & > *:first-child {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__owner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      width: 80%;
+    }
+  }
+
+  & .right-side > * {
+    font-family: 'Slabo';
+    font-size: 2.5rem;
+  }
+
+  & .right-side > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+
+  &__position {
+    text-align: center;
+  }
+
+  &__phone {
+    font-style: italic;
+    text-align: center;
+    border-bottom: 3px solid black;
+  }
+
+  &__email {
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__map {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__img--map {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin: 0;
+  }
 }
