@@ -14,7 +14,7 @@ export default function loadMenu() {
   const menuItemCoffee = createEl('div', ['menu__item'], '');
   menuItemCoffee.append(createEl('h3', ['menu__name'], 'Damn fine coffee'));
   menuItemCoffee.append(
-    createImgEl(['menu__img'], '../images/coffeecup.png', 'Damn Fine Coffee')
+    createImgEl(['menu__img'], './images/coffeecup.png', 'Damn Fine Coffee')
   );
   menuItemCoffee.append(createEl('h3', ['menu__price'], '$2.00'));
   menuItemCoffee.append(
@@ -24,7 +24,7 @@ export default function loadMenu() {
   const menuItemMilkshake = createEl('div', ['menu__item'], '');
   menuItemMilkshake.append(createEl('h3', ['menu__name'], 'Milkshake'));
   menuItemMilkshake.append(
-    createImgEl(['menu__img'], '../images/milkshake.png', 'Milkshake')
+    createImgEl(['menu__img'], './images/milkshake.png', 'Milkshake')
   );
   menuItemMilkshake.append(createEl('h3', ['menu__price'], '$4.00'));
   menuItemMilkshake.append(
@@ -45,7 +45,7 @@ export default function loadMenu() {
   const menuItemPie = createEl('div', ['menu__item'], '');
   menuItemPie.append(createEl('h3', ['menu__name'], 'Cherry Pie'));
   menuItemPie.append(
-    createImgEl(['menu__img'], '../images/pie.png', 'Cherry Pie')
+    createImgEl(['menu__img'], './images/pie.png', 'Cherry Pie')
   );
   menuItemPie.append(createEl('h3', ['menu__price'], '$5.00'));
   menuItemPie.append(
@@ -55,7 +55,7 @@ export default function loadMenu() {
   const menuItemDoughnut = createEl('div', ['menu__item'], '');
   menuItemDoughnut.append(createEl('h3', ['menu__name'], 'Doughnut'));
   menuItemDoughnut.append(
-    createImgEl(['menu__img'], '../images/doughnut.png', 'Doughnut')
+    createImgEl(['menu__img'], './images/doughnut.png', 'Doughnut')
   );
   menuItemDoughnut.append(createEl('h3', ['menu__price'], '$1.00'));
 

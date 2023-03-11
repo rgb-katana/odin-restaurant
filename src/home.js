@@ -20,7 +20,7 @@ export default function loadHome() {
   figure.append(
     createImgEl(
       ['home__img', 'left-side'],
-      '../images/cooperRR.PNG',
+      './images/cooperRR.PNG',
       'Agent Cooper in RR'
     )
   );

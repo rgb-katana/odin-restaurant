@@ -16,7 +16,7 @@ export default function loadContacts() {
   owner.append(
     createImgEl(
       ['contacts__img', 'contacts__img--owner'],
-      '../images/Norma.jpg',
+      './images/Norma.jpg',
       'Owner'
     )
   );
@@ -38,7 +38,7 @@ export default function loadContacts() {
   map.append(
     createImgEl(
       ['contacts__img', 'contacts__img--map'],
-      '../images/twinpeaksmap.png',
+      './images/twinpeaksmap.png',
       'Twin Peaks Map'
     )
   );
