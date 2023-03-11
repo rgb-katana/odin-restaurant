@@ -48,6 +48,23 @@ figcaption,
 cite {
   font-family: 'Slabo'; }
 
+.contacts {
+  width: 70%;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d8a914; }
+  @media only screen and (min-width: 112.5em) {
+    .contacts {
+      width: 50%; } }
+  @media only screen and (max-width: 75em) {
+    .contacts {
+      width: 80%; } }
+
 .home {
   width: 70%;
   min-height: 100vh;
@@ -145,6 +162,67 @@ cite {
     flex-direction: column; }
     .home__location p {
       margin-top: 1.5rem; }
+
+.menu {
+  width: 70%;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d8a914; }
+  @media only screen and (min-width: 112.5em) {
+    .menu {
+      width: 50%; } }
+  @media only screen and (max-width: 75em) {
+    .menu {
+      width: 80%; } }
+  .menu__part {
+    background-color: #fdf6de;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  .menu__part:not(:last-child) {
+    margin-bottom: 4rem; }
+  .menu__title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid black;
+    text-transform: uppercase; }
+    .menu__title--restaurant {
+      border-bottom: none;
+      font-size: 6rem; }
+  .menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Slabo';
+    padding: 2rem; }
+  .menu__item:not(:last-child) {
+    margin-bottom: 2rem;
+    border-bottom: 3px dotted black; }
+  .menu__name {
+    margin-right: auto;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
+  .menu__img {
+    width: 80%;
+    border-radius: 50%; }
+    @media only screen and (max-width: 75em) {
+      .menu__img {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .menu__img {
+        width: 90%; } }
+  .menu__price {
+    margin-left: auto;
+    font-size: 3rem; }
+    .menu__price--extra {
+      font-style: italic; }
 
 .navigation__checkbox {
   display: none; }

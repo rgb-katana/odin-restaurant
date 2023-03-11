@@ -1,6 +1,6 @@
-export function createEl(type, classList, textContent) {
+export function createEl(type, classList = [], textContent) {
   const el = document.createElement(type);
-  classList.map(cl => el.classList.add(cl));
+  if (classList.length !== 0) classList.map(cl => el.classList.add(cl));
   el.innerText = textContent;
 
   return el;

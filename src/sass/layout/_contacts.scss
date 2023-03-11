@@ -1,0 +1,22 @@
+.contacts {
+  width: 70%;
+  min-height: 100vh;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include respond(big-desktop) {
+    width: 50%;
+  }
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: $color-home-dark;
+}
