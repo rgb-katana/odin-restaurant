@@ -239,6 +239,7 @@ cite {
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
