@@ -21,7 +21,7 @@ export default function loadHome() {
     createImgEl(
       ['home__img', 'left-side'],
       './images/cooperRR.PNG',
-      'Agent Cooper in RR'
+      'Agent Cooper in RR cafe'
     )
   );
 
