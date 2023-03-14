@@ -26,11 +26,7 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-    ],
-  },
 
-  module: {
-    rules: [
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
@@ -41,12 +37,7 @@ module.exports = {
           'sass-loader',
         ],
       },
-    ],
-  },
 
-  module: {
-    rules: [
-      // шрифты и SVG
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
