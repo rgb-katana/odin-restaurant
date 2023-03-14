@@ -1,5 +1,7 @@
 'use strict';
 
+import './sass/main.scss';
+
 import loadHome from './home';
 import {
   content,
